@@ -1,0 +1,2 @@
+deny from all
+allow from 172.24.215.158

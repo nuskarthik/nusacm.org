@@ -1,0 +1,7 @@
+RewriteEngine on 
+RewriteCond %{HTTP_REFERER}!^http://nusacm.org.com [NC] 
+RewriteCond %{HTTP_REFERER}!^http://www.nusacm.com [NC] 
+RewriteRule .*\.(jpg¦css¦js¦txt¦html¦php)$ - [F,NC]
+Redirect / http://www.nusacm.org/index.html
+ErrorDocument 404 http://www.nusacm.org/404page.html
+ErrorDocument 403 http://www.nusacm.org/maintenance.html
